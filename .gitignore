@@ -1,0 +1,29 @@
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore data files (optional - or add specific files)
+data/
+*.csv
+*.xlsx
+
+# Ignore environment/config files
+.env
+*.env
+
+# Ignore Power BI autosave files
+*.pbix.autosave
+
+# Ignore OS and editor-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Ignore virtual environments (if any)
+venv/
+env/
