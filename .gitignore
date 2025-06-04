@@ -1,29 +1,35 @@
-# Ignore Jupyter notebook checkpoints
+# ✅ Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# Ignore Python cache
+# ✅ Python cache
 __pycache__/
 *.py[cod]
 *.so
 
-# Ignore data files (optional - or add specific files)
-data/
+# ✅ Keep data folder but ignore everything inside *except* explicitly allowed files
+data/*
+!data/.gitkeep
+!data/important_dataset.csv
+!data/summary.xlsx
+
+# ✅ Track only specific CSV/XLSX files, ignore others
+# Remove this if you want to allow all .csv/.xlsx files
 *.csv
 *.xlsx
 
-# Ignore environment/config files
+# ✅ Environment/config files
 .env
 *.env
 
-# Ignore Power BI autosave files
+# ✅ Power BI autosave files
 *.pbix.autosave
 
-# Ignore OS and editor-specific files
+# ✅ OS/editor files
 .DS_Store
 Thumbs.db
 .vscode/
 *.log
 
-# Ignore virtual environments (if any)
+# ✅ Virtual environments
 venv/
 env/
